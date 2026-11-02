@@ -1,0 +1,43 @@
+tacraft-sociality-github-oauth:
+  admin:
+    settings:
+      client_id_label: GitHub OAuth App Client ID
+      client_secret_label: Client Secret
+      client_id_help: "Create an app under GitHub → Settings → Developer settings → OAuth Apps."
+      callback_help: "Set the OAuth App's Authorization callback URL to {url}"
+
+  forum:
+    log_in_with: Log in with GitHub
+
+    link:
+      name: GitHub
+      heading: GitHub account
+      help: Link your GitHub account so you can sign in with it, or remove an existing link.
+      status_linked: Linked
+      status_unlinked: Not linked
+      identifier: "Account ID: {identifier}"
+      linked_at: "Linked {time}"
+      bind_button: Link GitHub account
+      rebind_button: Use a different account
+      unbind_button: Remove link
+      last_method_hint: This is the only third-party way to sign in to this account, so it cannot be unlinked. To switch it, click "Use a different account"; to unlink it, link another sign-in method first.
+      unlink_confirm: Are you sure you want to remove the link to your GitHub account? It will no longer be linked to this forum account; if the email addresses match, signing in with it again may link it automatically.
+      linked_success: Your GitHub account has been linked. You can now sign in with GitHub.
+      unlinked_success: Your GitHub account has been unlinked.
+      unlink_failed: Could not remove the GitHub link. Please try again.
+      load_failed: Could not load your GitHub link status. Please try again.
+      retry: Try again
+
+    errors:
+      not_configured: GitHub sign-in is not configured yet.
+      cancelled: GitHub sign-in was cancelled.
+      invalid_state: GitHub sign-in session expired. Please try again.
+      login_required: Please log in before linking a GitHub account.
+      already_linked: This GitHub account is already linked to another user.
+      token_error: GitHub did not return an access token. Please try again.
+      profile_error: Could not read your GitHub profile. Please try again.
+      email_error: Could not read your GitHub email addresses. Please try again.
+      provider_error: GitHub rejected the sign-in request. Please try again.
+      network_error: Could not reach GitHub. Please check your network and try again.
+      invalid_response: GitHub returned an unexpected response. Please try again.
+      unknown: Something went wrong while signing in with GitHub. Please try again.

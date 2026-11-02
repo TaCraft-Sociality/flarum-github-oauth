@@ -1,0 +1,47 @@
+{
+    "name": "tacraft-sociality/flarum-github-oauth",
+    "description": "GitHub OAuth login for Flarum 2.",
+    "keywords": [
+        "flarum",
+        "github",
+        "oauth",
+        "login",
+        "social-login"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0.2",
+        "guzzlehttp/guzzle": "^7.7",
+        "tacraft-sociality/flarum-oauth-core": "*"
+    },
+    "authors": [
+        {
+            "name": "TCS Dev Hub",
+            "email": "notify@mail.mctcs.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TacraftSociality\\GithubOAuth\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "GitHub OAuth",
+            "category": "feature",
+            "icon": {
+                "name": "fab fa-github",
+                "backgroundColor": "#24292f",
+                "color": "#fff"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

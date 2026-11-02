@@ -1,0 +1,43 @@
+tacraft-sociality-github-oauth:
+  admin:
+    settings:
+      client_id_label: GitHub OAuth App Client ID
+      client_secret_label: Client Secret
+      client_id_help: "在 GitHub → Settings → Developer settings → OAuth Apps 中创建应用。"
+      callback_help: "把 OAuth App 的 Authorization callback URL 设置为 {url}"
+
+  forum:
+    log_in_with: 使用 GitHub 登录
+
+    link:
+      name: GitHub
+      heading: GitHub 账号
+      help: 绑定 GitHub 账号后即可使用它登录论坛；也可以在这里解除已有的绑定。
+      status_linked: 已绑定
+      status_unlinked: 未绑定
+      identifier: "账号标识：{identifier}"
+      linked_at: "绑定于 {time}"
+      bind_button: 绑定 GitHub 账号
+      rebind_button: 更换绑定的账号
+      unbind_button: 解除绑定
+      last_method_hint: 这是当前账号唯一的第三方登录方式，不能解除绑定。如需更换，请点击「更换绑定的账号」；如需解绑，请先绑定其他登录方式。
+      unlink_confirm: 确定要解除 GitHub 绑定吗？解除后该账号将不再直接关联到当前论坛账号；如果邮箱一致，下次使用它登录时可能会自动重新关联。
+      linked_success: GitHub 账号绑定成功，现在可以使用它登录论坛了。
+      unlinked_success: 已解除 GitHub 账号绑定。
+      unlink_failed: 解除 GitHub 绑定失败，请重试。
+      load_failed: 无法读取 GitHub 绑定状态，请重试。
+      retry: 重试
+
+    errors:
+      not_configured: GitHub 登录尚未配置。
+      cancelled: 已取消 GitHub 登录。
+      invalid_state: GitHub 登录会话已过期，请重试。
+      login_required: 请先登录后再绑定 GitHub 账号。
+      already_linked: 该 GitHub 账号已绑定到其他用户。
+      token_error: GitHub 未返回访问令牌，请重试。
+      profile_error: 无法读取 GitHub 个人资料，请重试。
+      email_error: 无法读取 GitHub 邮箱，请重试。
+      provider_error: GitHub 拒绝了本次登录，请重试。
+      network_error: 无法连接 GitHub，请检查网络后重试。
+      invalid_response: GitHub 返回了无法识别的响应，请重试。
+      unknown: 使用 GitHub 登录时出现问题，请重试。

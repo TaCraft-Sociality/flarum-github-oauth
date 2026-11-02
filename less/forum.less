@@ -1,0 +1,90 @@
+.LogInButton--github {
+    &.Button {
+        .Button--color(#fff, #24292f);
+    }
+
+    .GithubOAuth-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+// Link/unlink panel on the user security page.
+
+.GithubOAuth-Account {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: var(--control-bg);
+    color: var(--control-color);
+    border-radius: @border-radius;
+
+    &-icon {
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        color: var(--text-color);
+        background-color: fade(#24292f, 14%);
+        border-radius: 50%;
+    }
+
+    &-logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    &-name {
+        font-weight: bold;
+    }
+
+    &-status {
+        color: var(--muted-color);
+    }
+
+    &--linked &-status {
+        color: var(--alert-success-color);
+    }
+
+    &-meta {
+        margin-top: 4px;
+        font-size: 0.9em;
+        color: var(--muted-color);
+        word-break: break-all;
+    }
+
+    &-actions {
+        display: flex;
+        flex: none;
+        gap: 8px;
+        margin-left: auto;
+
+        .Button {
+            margin: 0;
+        }
+    }
+}
+
+.GithubOAuth-Account-errors .Button {
+    margin-top: 8px;
+}
+
+@media @phone {
+    .GithubOAuth-Account {
+        flex-wrap: wrap;
+
+        &-actions {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
